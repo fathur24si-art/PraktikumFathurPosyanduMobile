@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">Fathur-carry</string>
+    <string name="posyandu_name">Posyandu Digital</string>
+    <string name="posyandu_tagline">Melayani dengan Sepenuh Hati</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login_welcome">Selamat Datang di Posyandu Digital</string>
+    <string name="login_instruction">Silakan masuk untuk melanjutkan layanan</string>
+    <string name="logout">Logout</string>
+    <string name="home">Beranda</string>
+    <string name="web_view">Edukasi</string>
+    <string name="profile">Profil</string>
+    <string name="chatbot">Tanya Chatbot</string>
+    <string name="search_hint">Cari informasi layanan...</string>
+    <string name="powered_by">Powered by Fathur rahman</string>
+    <string name="app_version">v1.0.0</string>
+    <string name="save_profile">Simpan Profil</string>
+    <string name="full_name">Nama Lengkap</string>
+    <string name="phone_number">Nomor Telepon</string>
+    <string name="address">Alamat</string>
+    <string name="bot_name">Posyandu Bot</string>
+    <string name="bot_welcome">Halo Bunda! Ada yang bisa saya bantu terkait kesehatan si kecil?</string>
 </resources>

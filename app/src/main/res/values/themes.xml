@@ -1,13 +1,20 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Menggunakan Theme.MaterialComponents agar lebih kompatibel dengan Material Buttons dan CardViews -->
     <style name="Base.Theme.Fathurcarry" parent="Theme.MaterialComponents.Light.NoActionBar">
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-
-        <!-- Menjamin warna latar belakang default agar tidak hitam -->
-        <item name="android:windowBackground">@color/vintage_background</item>
+        <item name="colorPrimary">@color/posyandu_primary</item>
+        <item name="colorPrimaryDark">@color/posyandu_primary_dark</item>
+        <item name="colorAccent">@color/posyandu_accent</item>
+        <item name="android:windowBackground">@color/posyandu_bg</item>
     </style>
 
     <style name="Theme.Fathurcarry" parent="Base.Theme.Fathurcarry" />
+
+    <style name="Theme.Posyandu.NoActionBar" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/posyandu_primary</item>
+        <item name="colorPrimaryDark">@color/posyandu_primary_dark</item>
+        <item name="colorAccent">@color/posyandu_accent</item>
+    </style>
+
+    <style name="CircleImage" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
 </resources>

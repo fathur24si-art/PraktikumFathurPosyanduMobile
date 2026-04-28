@@ -3,26 +3,30 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-<<<<<<< HEAD
+    <color name="posyandu_primary">#00BCD4</color>
+    <color name="posyandu_primary_dark">#0097A7</color>
+    <color name="posyandu_accent">#FF4081</color>
+
+    <color name="posyandu_bg">#F0F4F8</color>
+    <color name="posyandu_card">#FFFFFF</color>
+    <color name="posyandu_text_primary">#263238</color>
+    <color name="posyandu_text_secondary">#78909C</color>
+
+    <!-- Modern Splash Colors -->
+    <color name="splash_bg_start">#00BCD4</color>
+    <color name="splash_bg_end">#0097A7</color>
+    <color name="splash_accent_light">#80FFFFFF</color>
+    <color name="splash_accent_faint">#20FFFFFF</color>
+
+    <!-- Legacy colors required by existing layouts -->
     <color name="colorPrimary">#2962FF</color>
     <color name="colorPrimaryDark">#0039CB</color>
     <color name="colorAccent">#768FFF</color>
+    <color name="vintage_background">#F4EFEA</color>
 
     <color name="colorBackground">#F5F7FA</color>
     <color name="colorCard">#FFFFFF</color>
-
     <color name="textColorPrimary">#2D3748</color>
     <color name="textColorSecondary">#718096</color>
     <color name="colorDanger">#E53E3E</color>
-
-    <color name="vintage_background">#F4EFEA</color>
-    <color name="vintage_card">#EAD8C0</color>
-    <color name="vintage_text_primary">#3E2723</color>
-    <color name="vintage_text_secondary">#5D4037</color>
-    <color name="vintage_accent">#8D6E63</color>
-
-    <color name="purple_500">#6200EE</color>
-=======
-
->>>>>>> 51372000e7f77ef4a5b4ab58e841c5a6dbf26d10
 </resources>
