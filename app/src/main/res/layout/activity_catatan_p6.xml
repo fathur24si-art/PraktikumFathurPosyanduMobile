@@ -15,7 +15,7 @@
             android:background="@color/posyandu_primary"
             app:title="Catatan Kesehatan"
             app:titleTextColor="@color/white"
-            app:navigationIcon="@android:drawable/ic_menu_revert"
+            app:navigationIcon="@drawable/ic_back_ios"
             app:navigationIconTint="@color/white" />
     </com.google.android.material.appbar.AppBarLayout>
 

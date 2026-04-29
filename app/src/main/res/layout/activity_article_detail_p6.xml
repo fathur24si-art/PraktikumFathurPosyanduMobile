@@ -32,7 +32,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 app:layout_collapseMode="pin"
-                app:navigationIcon="@android:drawable/ic_menu_revert"
+                app:navigationIcon="@drawable/ic_back_ios"
                 app:navigationIconTint="@color/white" />
 
         </com.google.android.material.appbar.CollapsingToolbarLayout>

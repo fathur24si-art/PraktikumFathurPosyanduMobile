@@ -13,9 +13,8 @@
         android:usesCleartextTraffic="true"
         android:theme="@style/Theme.Fathurcarry">
 
-        <!-- Pertemuan 7: Posyandu App Flow -->
         <activity
-            android:name=".pertemuan7.SplashActivity"
+            android:name=".SplashScreenActivity"
             android:exported="true"
             android:theme="@style/Theme.Posyandu.NoActionBar">
             <intent-filter>
@@ -25,79 +24,62 @@
         </activity>
 
         <activity
-            android:name=".pertemuan7.LoginActivity"
+            android:name=".AuthActivity"
             android:exported="false"
             android:theme="@style/Theme.Posyandu.NoActionBar" />
 
         <activity
-            android:name=".pertemuan7.HomeActivity"
+            android:name=".MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Posyandu.NoActionBar" />
+
+        <!-- Fitur Pertemuan 7 (Posyandu Utama) -->
+        <activity
+            android:name=".Home.pertemuan_7.CatatanActivity"
             android:exported="false"
             android:theme="@style/Theme.Posyandu.NoActionBar" />
 
         <activity
-            android:name=".pertemuan7.CatatanActivity"
+            android:name=".Home.pertemuan_7.JadwalActivity"
             android:exported="false"
             android:theme="@style/Theme.Posyandu.NoActionBar" />
 
         <activity
-            android:name=".pertemuan7.JadwalActivity"
+            android:name=".Home.pertemuan_7.VaksinActivity"
             android:exported="false"
             android:theme="@style/Theme.Posyandu.NoActionBar" />
 
         <activity
-            android:name=".pertemuan7.VaksinActivity"
+            android:name=".Home.pertemuan_7.ArticleDetailActivity"
             android:exported="false"
             android:theme="@style/Theme.Posyandu.NoActionBar" />
 
         <activity
-            android:name=".pertemuan7.ArticleDetailActivity"
+            android:name=".Home.pertemuan_7.SettingsActivity"
             android:exported="false"
             android:theme="@style/Theme.Posyandu.NoActionBar" />
 
         <activity
-            android:name=".pertemuan7.SettingsActivity"
+            android:name=".Home.pertemuan_7.HomeActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Posyandu.NoActionBar" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="YOUR_API_KEY_HERE" />
+
+        <!-- Fitur Pertemuan 6 (Fallback/Layanan Terkait) -->
+        <activity
+            android:name=".Home.pertemuan_6.HomeActivity"
             android:exported="false"
             android:theme="@style/Theme.Posyandu.NoActionBar" />
 
         <activity
-            android:name=".pertemuan7.Pertemuan7Activity"
-            android:exported="false"
-            android:theme="@style/Theme.Posyandu.NoActionBar" />
-
-        <!-- Previous Pertemuan Activities -->
-        <activity
-            android:name=".pertemuan6.SplashActivity"
-            android:exported="false"
-            android:theme="@style/Theme.Posyandu.NoActionBar" />
-
-        <activity
-            android:name=".pertemuan6.LoginActivity"
-            android:exported="false"
-            android:theme="@style/Theme.Posyandu.NoActionBar" />
-
-        <activity
-            android:name=".pertemuan6.HomeActivity"
-            android:exported="false"
-            android:theme="@style/Theme.Posyandu.NoActionBar" />
-
-        <!-- Previous Pertemuan Activities -->
-        <activity
-            android:name=".pertemuan5.Pertemuan5Activity"
-            android:exported="false" />
-
-        <activity android:name=".BerandaUtamaActivity" android:exported="true" />
-        <activity android:name=".LoginActivity" android:exported="true" />
-        <activity android:name=".HomeActivity" android:exported="true" />
-        <activity android:name=".SuccessActivity" android:exported="true" />
-        <activity android:name=".VerificationActivity" android:exported="true" />
-        <activity android:name=".pertemuan_3.ThirdActivity" android:exported="true" />
-
-        <activity
-            android:name=".pertemuan4.EksplorasiMateriActivity"
+            android:name=".VerificationActivity"
             android:exported="false" />
 
         <activity
-            android:name=".pertemuan4.HasilPenerimaanActivity"
+            android:name=".SuccessActivity"
             android:exported="false" />
 
     </application>
