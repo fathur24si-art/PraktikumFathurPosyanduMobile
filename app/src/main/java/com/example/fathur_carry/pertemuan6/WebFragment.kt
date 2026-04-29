@@ -39,7 +39,7 @@ class WebFragment : Fragment() {
             }
             settings.javaScriptEnabled = true
             settings.domStorageEnabled = true
-            loadUrl("https://ayosehat.kemkes.go.id/posyandu-semakin-siap-melayani-masyarakat-secara-menyuluh-")
+            loadUrl("https://www.kemkes.go.id/id/home")
         }
     }
 

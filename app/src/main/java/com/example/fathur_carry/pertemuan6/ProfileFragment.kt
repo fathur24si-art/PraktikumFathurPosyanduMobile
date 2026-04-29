@@ -48,6 +48,11 @@ class ProfileFragment : Fragment() {
                 Toast.makeText(requireContext(), "Nama tidak boleh kosong", Toast.LENGTH_SHORT).show()
             }
         }
+
+        binding.btnSettings.setOnClickListener {
+            val intent = android.content.Intent(requireContext(), SettingsActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     override fun onDestroyView() {

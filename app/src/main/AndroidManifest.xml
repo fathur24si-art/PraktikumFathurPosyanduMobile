@@ -13,9 +13,9 @@
         android:usesCleartextTraffic="true"
         android:theme="@style/Theme.Fathurcarry">
 
-        <!-- Pertemuan 6: Posyandu App Flow -->
+        <!-- Pertemuan 7: Posyandu App Flow -->
         <activity
-            android:name=".pertemuan6.SplashActivity"
+            android:name=".pertemuan7.SplashActivity"
             android:exported="true"
             android:theme="@style/Theme.Posyandu.NoActionBar">
             <intent-filter>
@@ -23,6 +23,52 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".pertemuan7.LoginActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Posyandu.NoActionBar" />
+
+        <activity
+            android:name=".pertemuan7.HomeActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Posyandu.NoActionBar" />
+
+        <activity
+            android:name=".pertemuan7.CatatanActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Posyandu.NoActionBar" />
+
+        <activity
+            android:name=".pertemuan7.JadwalActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Posyandu.NoActionBar" />
+
+        <activity
+            android:name=".pertemuan7.VaksinActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Posyandu.NoActionBar" />
+
+        <activity
+            android:name=".pertemuan7.ArticleDetailActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Posyandu.NoActionBar" />
+
+        <activity
+            android:name=".pertemuan7.SettingsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Posyandu.NoActionBar" />
+
+        <activity
+            android:name=".pertemuan7.Pertemuan7Activity"
+            android:exported="false"
+            android:theme="@style/Theme.Posyandu.NoActionBar" />
+
+        <!-- Previous Pertemuan Activities -->
+        <activity
+            android:name=".pertemuan6.SplashActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Posyandu.NoActionBar" />
 
         <activity
             android:name=".pertemuan6.LoginActivity"
