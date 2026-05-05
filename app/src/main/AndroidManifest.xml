@@ -13,7 +13,7 @@
         android:usesCleartextTraffic="true"
         android:theme="@style/Theme.Fathurcarry">
 
-        <!-- Pertemuan 6: Posyandu App Flow -->
+
         <activity
             android:name=".pertemuan6.SplashActivity"
             android:exported="true"
@@ -34,7 +34,7 @@
             android:exported="false"
             android:theme="@style/Theme.Posyandu.NoActionBar" />
 
-        <!-- Previous Pertemuan Activities -->
+
         <activity
             android:name=".pertemuan5.Pertemuan5Activity"
             android:exported="false" />

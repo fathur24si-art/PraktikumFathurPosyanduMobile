@@ -12,6 +12,7 @@
     <string name="web_view">Edukasi</string>
     <string name="profile">Profil</string>
     <string name="chatbot">Tanya Chatbot</string>
+    <string name="about">About Aplikasi</string>
     <string name="search_hint">Cari informasi layanan...</string>
     <string name="powered_by">Powered by Fathur rahman</string>
     <string name="app_version">v1.0.0</string>
@@ -21,4 +22,39 @@
     <string name="address">Alamat</string>
     <string name="bot_name">Posyandu Bot</string>
     <string name="bot_welcome">Halo Bunda! Ada yang bisa saya bantu terkait kesehatan si kecil?</string>
+
+    <!-- Dashboard Strings -->
+    <string name="greeting_morning">Selamat Pagi,</string>
+    <string name="status_nutrition">Status Gizi</string>
+    <string name="status_normal">Normal</string>
+    <string name="kunjungan">Kunjungan</string>
+    <string name="kunjungan_count">6 kali</string>
+    <string name="layanan_populer">Layanan Populer</string>
+    <string name="menu_jadwal">Jadwal</string>
+    <string name="menu_pertumbuhan">Pertumbuhan</string>
+    <string name="menu_edukasi">Edukasi</string>
+    <string name="menu_konsultasi">Konsultasi</string>
+    <string name="artikel_kesehatan">Artikel Kesehatan</string>
+    <string name="lihat_semua">Lihat Semua</string>
+    <string name="tag_nutrisi">Nutrisi Anak</string>
+    <string name="article_title">Pentingnya ASI Eksklusif untuk Tumbuh Kembang Bayi</string>
+    <string name="article_desc">Pemberian ASI eksklusif selama 6 bulan pertama sangat krusial untuk imunitas dan kecerdasan anak.</string>
+
+    <!-- Profile Section -->
+    <string name="dev_name">Fathur Rahman</string>
+    <string name="dev_status">Mahasiswa Sistem Informasi Semester 4 PCR</string>
+    <string name="dev_role">Pengembang Aplikasi</string>
+    <string name="contact_info">Informasi Kontak</string>
+    <string name="dev_email">fathur.rahman@student.pcr.ac.id</string>
+    <string name="dev_location">Pekanbaru, Riau</string>
+    <string name="email_desc">Email</string>
+    <string name="location_desc">Lokasi</string>
+
+    <!-- About Section -->
+    <string name="about_title">Tentang Posyandu Digital</string>
+    <string name="about_desc">Posyandu Digital adalah aplikasi inovatif yang dirancang untuk membantu orang tua dalam memantau tumbuh kembang anak secara mandiri. Aplikasi ini mengintegrasikan teknologi digital dengan layanan kesehatan masyarakat untuk mewujudkan generasi sehat.</string>
+    <string name="about_feature_title">Fitur Unggulan</string>
+    <string name="about_feature_1">✔ Kalkulator Kesehatan (IMT &amp; Gizi)</string>
+    <string name="about_feature_2">✔ Edukasi Kesehatan Terintegrasi</string>
+    <string name="about_feature_3">✔ Konsultasi melalui Chatbot Cerdas</string>
 </resources>

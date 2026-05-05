@@ -25,7 +25,6 @@ class HomeActivity : AppCompatActivity() {
             loadFragment(HomeFragment())
         }
 
-        // Modern way to handle back press
         onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
             override fun handleOnBackPressed() {
                 MaterialAlertDialogBuilder(this@HomeActivity)
@@ -49,12 +48,8 @@ class HomeActivity : AppCompatActivity() {
                     loadFragment(HomeFragment())
                     true
                 }
-                R.id.nav_web -> {
-                    loadFragment(WebFragment())
-                    true
-                }
-                R.id.nav_chatbot -> {
-                    loadFragment(ChatbotFragment())
+                R.id.nav_about -> {
+                    loadFragment(AboutFragment())
                     true
                 }
                 R.id.nav_profile -> {

@@ -24,11 +24,11 @@ class SplashActivity : AppCompatActivity() {
         // 1. Hide system UI for immersive feel
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
 
-        // 2. Load Animations
+
         val scaleUp = AnimationUtils.loadAnimation(this, R.anim.scale_up_bounce)
         val fadeIn = AnimationUtils.loadAnimation(this, R.anim.fade_in)
 
-        // 3. Start Animations Sequence
+
         binding.cvLogo.startAnimation(scaleUp)
         
         binding.tvAppName.visibility = View.INVISIBLE
