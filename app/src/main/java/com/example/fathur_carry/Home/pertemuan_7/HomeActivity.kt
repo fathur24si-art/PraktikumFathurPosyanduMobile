@@ -7,6 +7,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.core.view.updatePadding
 import androidx.fragment.app.Fragment
 import com.example.fathur_carry.R
 import com.example.fathur_carry.databinding.ActivityHomeP7Binding
@@ -19,26 +20,28 @@ class HomeActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        // Aktifkan Edge-to-Edge
         enableEdgeToEdge()
+
         binding = ActivityHomeP7Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        ViewCompat.setOnApplyWindowInsetsListener(binding.root) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, 0, systemBars.right, 0)
-            insets
-        }
-
-        ViewCompat.setOnApplyWindowInsetsListener(binding.toolbar) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(0, systemBars.top, 0, 0)
-            insets
-        }
-
         sessionManager = SessionManager(this)
 
-        if (savedInstanceState == null) {
-            loadFragment(HomeFragment())
+        // Handle Insets untuk Root dan Toolbar
+        ViewCompat.setOnApplyWindowInsetsListener(binding.root) { v, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.updatePadding(left = systemBars.left, right = systemBars.right)
+            binding.toolbar.updatePadding(top = systemBars.top)
+            insets
+        }
+
+        // Handle Insets untuk Bottom Navigation
+        ViewCompat.setOnApplyWindowInsetsListener(binding.bottomNavigation) { v, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.updatePadding(bottom = systemBars.bottom)
+            insets
         }
 
         onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
@@ -55,7 +58,9 @@ class HomeActivity : AppCompatActivity() {
         })
 
         binding.bottomNavigation.setOnItemSelectedListener { item ->
-            if (binding.bottomNavigation.selectedItemId == item.itemId) {
+            // Menghindari reload fragment yang sama
+            val currentFragment = supportFragmentManager.findFragmentById(R.id.fragment_container)
+            if (binding.bottomNavigation.selectedItemId == item.itemId && currentFragment != null) {
                 return@setOnItemSelectedListener false
             }
 
@@ -65,18 +70,13 @@ class HomeActivity : AppCompatActivity() {
                     loadFragment(HomeFragment())
                     true
                 }
-                R.id.nav_map -> {
-                    binding.toolbar.title = "Info Kemenkes"
-                    loadFragment(WebFragment())
-                    true
-                }
                 R.id.nav_chatbot -> {
                     binding.toolbar.title = "Chatbot"
                     loadFragment(ChatbotFragment())
                     true
                 }
                 R.id.nav_profile -> {
-                    binding.toolbar.title = "Profil"
+                    binding.toolbar.title = "Profil Pengembang"
                     loadFragment(ProfileFragment())
                     true
                 }
@@ -97,6 +97,13 @@ class HomeActivity : AppCompatActivity() {
                 }
                 else -> false
             }
+        }
+
+        // Set default fragment
+        if (savedInstanceState == null) {
+            binding.toolbar.title = "Home"
+            loadFragment(HomeFragment())
+            binding.bottomNavigation.selectedItemId = R.id.nav_home
         }
     }
 

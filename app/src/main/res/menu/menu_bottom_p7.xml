@@ -3,21 +3,25 @@
     <item
         android:id="@+id/nav_home"
         android:icon="@android:drawable/ic_menu_today"
-        android:title="Home" />
+        android:title="Beranda" />
+
     <item
-        android:id="@+id/nav_map"
-        android:icon="@android:drawable/ic_menu_search"
-        android:title="Info" />
+        android:id="@+id/nav_about"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:title="About Aplikasi" />
+
     <item
         android:id="@+id/nav_chatbot"
         android:icon="@android:drawable/stat_notify_chat"
         android:title="Chat" />
+
     <item
         android:id="@+id/nav_profile"
         android:icon="@android:drawable/ic_menu_myplaces"
         android:title="Profil" />
+
     <item
         android:id="@+id/nav_logout"
         android:icon="@android:drawable/ic_lock_power_off"
-        android:title="Keluar" />
+        android:title="Logout" />
 </menu>

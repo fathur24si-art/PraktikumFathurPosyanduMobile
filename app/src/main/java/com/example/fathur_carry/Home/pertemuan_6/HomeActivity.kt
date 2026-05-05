@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
+import com.example.fathur_carry.Home.pertemuan_7.AboutFragment
 import com.example.fathur_carry.R
 import com.example.fathur_carry.databinding.ActivityHomeP6Binding
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
@@ -66,9 +67,9 @@ class HomeActivity : AppCompatActivity() {
                     loadFragment(HomeFragment())
                     true
                 }
-                R.id.nav_map -> {
-                    binding.toolbar.title = "Info Kemenkes"
-                    loadFragment(WebFragment())
+                R.id.nav_about -> {
+                    binding.toolbar.title = "About Aplikasi"
+                    loadFragment(AboutFragment())
                     true
                 }
                 R.id.nav_chatbot -> {

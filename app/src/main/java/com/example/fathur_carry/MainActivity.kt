@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.example.fathur_carry.Home.HomeFragment
+import com.example.fathur_carry.Home.pertemuan_7.AboutFragment
 import com.example.fathur_carry.Home.pertemuan_7.ProfileFragment
 import com.example.fathur_carry.Home.pertemuan_7.SessionManager
 import com.example.fathur_carry.Message.MessageFragment
@@ -41,8 +42,8 @@ class MainActivity : BaseActivity() {
                     loadFragment(ProfileFragment())
                     true
                 }
-                R.id.nav_map -> {
-                    loadFragment(MoreFragment())
+                R.id.nav_about -> {
+                    loadFragment(AboutFragment())
                     true
                 }
                 R.id.nav_logout -> {

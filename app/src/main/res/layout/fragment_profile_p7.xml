@@ -9,8 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="24dp"
-        android:gravity="center_horizontal">
+        android:padding="24dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -19,92 +18,151 @@
             android:text="Profil Pengembang"
             android:textColor="@color/posyandu_text_primary"
             android:textSize="24sp"
-            android:layout_marginBottom="32dp" />
+            android:layout_marginBottom="24dp" />
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:cardCornerRadius="24dp"
-            app:cardElevation="8dp">
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            android:layout_marginBottom="24dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="32dp"
+                android:padding="20dp"
                 android:gravity="center">
 
                 <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/ivDevPhoto"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
                     android:src="@drawable/profil"
                     app:shapeAppearanceOverlay="@style/CircleImage"
                     app:strokeColor="@color/posyandu_primary"
-                    app:strokeWidth="4dp"
+                    app:strokeWidth="3dp"
                     android:padding="4dp"
                     android:layout_marginBottom="16dp"
                     android:scaleType="centerCrop"/>
 
                 <TextView
+                    android:id="@+id/tvDevName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/poppins_bold"
-                    android:text="Fathur Rahman"
+                    android:text="Fathur Carry"
                     android:textColor="@color/posyandu_text_primary"
-                    android:textSize="22sp" />
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tvDevRole"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Android Developer"
+                    android:textColor="@color/posyandu_primary"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp"
+            android:layout_marginBottom="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/poppins_regular"
-                    android:text="Mahasiswa Sistem Informasi PCR"
-                    android:textColor="@color/posyandu_primary"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Informasi Kontak"
+                    android:textColor="@color/posyandu_text_primary"
                     android:textSize="16sp"
-                    android:layout_marginBottom="24dp"
-                    android:textAlignment="center"/>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="#EEEEEE"
-                    android:layout_marginBottom="24dp"/>
+                    android:layout_marginBottom="12dp"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="start">
-
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="8dp">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@android:drawable/ic_dialog_email"
+                        app:tint="@color/posyandu_primary"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Kontak &amp; Informasi"
-                        android:fontFamily="@font/poppins_bold"
-                        android:textSize="14sp"
-                        android:textColor="@color/posyandu_text_secondary"
-                        android:layout_marginBottom="12dp"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Institusi: Politeknik Caltex Riau"
+                        android:layout_marginStart="12dp"
                         android:fontFamily="@font/poppins_regular"
-                        android:textSize="14sp"
-                        android:layout_marginBottom="8dp"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Prodi: Sistem Informasi"
-                        android:fontFamily="@font/poppins_regular"
-                        android:textSize="14sp"
-                        android:layout_marginBottom="8dp"/>
-
+                        android:text="fathur.carry@email.com"
+                        android:textColor="@color/posyandu_text_secondary"/>
                 </LinearLayout>
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@android:drawable/ic_menu_mapmode"
+                        app:tint="@color/posyandu_primary"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Kampus Terpadu, Indonesia"
+                        android:textColor="@color/posyandu_text_secondary"/>
+                </LinearLayout>
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSettings"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="6dp"
+                android:text="Pengaturan"
+                android:textAllCaps="false"
+                android:fontFamily="@font/poppins_regular"
+                app:cornerRadius="12dp"
+                app:icon="@android:drawable/ic_menu_manage"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnLogout"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:layout_marginStart="6dp"
+                android:text="Keluar"
+                android:textColor="#F44336"
+                app:strokeColor="#F44336"
+                android:textAllCaps="false"
+                android:fontFamily="@font/poppins_regular"
+                app:cornerRadius="12dp"
+                app:icon="@android:drawable/ic_lock_power_off"
+                app:iconTint="#F44336"/>
+        </LinearLayout>
 
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>

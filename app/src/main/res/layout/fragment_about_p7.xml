@@ -9,56 +9,75 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="24dp">
+        android:padding="24dp"
+        android:gravity="center_horizontal">
 
+        <!-- App Logo -->
         <com.google.android.material.card.MaterialCardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:cardCornerRadius="20dp"
-            app:cardElevation="4dp">
-
-            <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="6dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="16dp">
+            <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="24dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Posyandu Digital"
-                    android:textColor="@color/posyandu_primary"
-                    android:textSize="22sp"
-                    android:fontFamily="@font/poppins_bold" />
-
-                <View
-                    android:layout_width="60dp"
-                    android:layout_height="4dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="16dp"
-                    android:background="@color/posyandu_primary" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Posyandu Digital adalah inisiatif Bina Desa yang bertujuan untuk memodernisasi layanan kesehatan masyarakat di tingkat desa melalui teknologi mobile, memudahkan pemantauan kesehatan ibu dan anak."
-                    android:textColor="@color/posyandu_text_primary"
-                    android:textSize="14sp"
-                    android:lineSpacingExtra="4dp"
-                    android:fontFamily="@font/poppins_regular" />
-
-            </LinearLayout>
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_posyandu_logo"
+                android:padding="20dp"
+                android:scaleType="centerInside"
+                android:background="@color/posyandu_primary"/>
         </com.google.android.material.card.MaterialCardView>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:layout_marginBottom="12dp"
-            android:text="Fitur Unggulan"
-            android:textColor="@color/posyandu_text_primary"
-            android:textSize="18sp"
-            android:fontFamily="@font/poppins_bold" />
+            android:text="Posyandu Digital"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="26sp"
+            android:textColor="@color/posyandu_primary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Versi 2.0.4"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="14sp"
+            android:textColor="@color/posyandu_text_secondary"
+            android:layout_marginBottom="32dp" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="2dp"
+            android:layout_marginBottom="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tentang Aplikasi"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/posyandu_text_primary"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Posyandu Digital adalah platform kesehatan terpadu yang dirancang untuk mempermudah pemantauan tumbuh kembang anak secara mandiri oleh orang tua. Dengan fitur pencatatan digital dan konsultasi cerdas, kami berkomitmen untuk mendukung pertumbuhan generasi Indonesia yang lebih sehat."
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="14sp"
+                    android:lineSpacingExtra="4dp"
+                    android:textColor="@color/posyandu_text_secondary" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
@@ -70,33 +89,36 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="16dp">
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Misi &amp; Tujuan"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/posyandu_text_primary"
+                    android:layout_marginBottom="12dp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="• Pemantauan Pertumbuhan Anak"
-                    android:textColor="@color/posyandu_text_secondary"
-                    android:layout_marginBottom="8dp"
-                    android:fontFamily="@font/poppins_regular" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="• Edukasi Kesehatan Terintegrasi"
-                    android:textColor="@color/posyandu_text_secondary"
-                    android:layout_marginBottom="8dp"
-                    android:fontFamily="@font/poppins_regular" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="• Chatbot Konsultasi Kesehatan"
-                    android:textColor="@color/posyandu_text_secondary"
-                    android:fontFamily="@font/poppins_regular" />
-
+                    android:text="• Digitalisasi data kesehatan balita.\n• Memudahkan akses informasi gizi.\n• Konsultasi kesehatan berbasis AI.\n• Monitoring jadwal imunisasi rutin."
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="14sp"
+                    android:lineSpacingExtra="6dp"
+                    android:textColor="@color/posyandu_text_secondary" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="© 2024 Posyandu Digital Team"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="12sp"
+            android:textColor="@color/posyandu_text_secondary" />
 
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>

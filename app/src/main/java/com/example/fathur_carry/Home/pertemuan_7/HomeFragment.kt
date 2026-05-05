@@ -36,7 +36,9 @@ class HomeFragment : Fragment(), OnMapReadyCallback {
         val activity = requireActivity() as HomeActivity
 
         binding.btnCheckGrowth.setOnClickListener {
-            activity.navigateTo(R.id.nav_map)
+            // Updated: Removed navigation to nav_tentang
+            val intent = android.content.Intent(requireContext(), ArticleDetailActivity::class.java)
+            startActivity(intent)
         }
 
         binding.menuRecord.setOnClickListener {
@@ -55,7 +57,9 @@ class HomeFragment : Fragment(), OnMapReadyCallback {
         }
 
         binding.menuInfo.setOnClickListener {
-            activity.navigateTo(R.id.nav_map)
+            // Updated: Removed navigation to nav_tentang
+            val intent = android.content.Intent(requireContext(), ArticleDetailActivity::class.java)
+            startActivity(intent)
         }
 
         binding.cardArticle.setOnClickListener {
