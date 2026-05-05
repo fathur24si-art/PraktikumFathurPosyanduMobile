@@ -6,7 +6,9 @@
         <item name="android:windowBackground">@color/posyandu_bg</item>
     </style>
 
-    <style name="Theme.Fathurcarry" parent="Base.Theme.Fathurcarry" />
+    <style name="Theme.Fathurcarry" parent="Base.Theme.Fathurcarry">
+        <item name="android:statusBarColor">@color/posyandu_primary</item>
+    </style>
 
     <style name="Theme.Posyandu.NoActionBar" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="colorPrimary">@color/posyandu_primary</item>
