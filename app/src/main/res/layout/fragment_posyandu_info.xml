@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Posyandu Semakin Siap Melayani Masyarakat Semua Usia"
+            android:textColor="@color/posyandu_text_primary"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_marginBottom="16dp" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp"
+            android:layout_marginBottom="16dp"
+            app:strokeWidth="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="#F0F7FF">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Apa itu Posyandu?"
+                    android:textColor="@color/posyandu_primary"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins_bold"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Posyandu adalah Lembaga Kemasyarakatan Desa/Kelurahan (LKD/LKK) yang menjadi wadah partisipasi masyarakat untuk membantu kepala desa/lurah dalam meningkatkan pelayanan sosial dasar dan kesehatan di desa/kelurahan."
+                    android:textColor="@color/posyandu_text_primary"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:lineSpacingExtra="4dp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sasaran Layanan"
+            android:textColor="@color/posyandu_text_primary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kini Posyandu melayani seluruh siklus hidup:\n• Ibu hamil dan menyusui\n• Bayi dan balita\n• Anak usia sekolah dan remaja\n• Dewasa usia produktif dan Lansia"
+            android:textColor="@color/posyandu_text_primary"
+            android:textSize="14sp"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginBottom="16dp"
+            android:lineSpacingExtra="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5 Langkah Pelayanan Posyandu"
+            android:textColor="@color/posyandu_text_primary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Step 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+            <TextView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/circle_primary"
+                android:text="1"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="12dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pendaftaran"
+                    android:textColor="@color/posyandu_text_primary"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins_bold" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dilakukan oleh kader; meliputi pencatatan data, wawancara skrining risiko, dan pengecekan suhu tubuh."
+                    android:textColor="@color/posyandu_text_primary"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/poppins_regular" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Step 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+            <TextView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/circle_primary"
+                android:text="2"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="12dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Penimbangan dan Pengukuran"
+                    android:textColor="@color/posyandu_text_primary"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins_bold" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pengukuran berat badan, tinggi badan, lingkar perut, tekanan darah, dll sesuai kelompok usia."
+                    android:textColor="@color/posyandu_text_primary"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/poppins_regular" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Step 3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+            <TextView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/circle_primary"
+                android:text="3"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="12dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pencatatan"
+                    android:textColor="@color/posyandu_text_primary"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins_bold" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hasil pemeriksaan diplot ke dalam kartu kesehatan atau buku KIA."
+                    android:textColor="@color/posyandu_text_primary"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/poppins_regular" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Step 4 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+            <TextView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/circle_primary"
+                android:text="4"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="12dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Penyuluhan Kesehatan"
+                    android:textColor="@color/posyandu_text_primary"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins_bold" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Edukasi yang disesuaikan dengan kelompok usia (misal: gizi balita, aktivitas fisik lansia, dsb)."
+                    android:textColor="@color/posyandu_text_primary"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/poppins_regular" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Step 5 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="24dp">
+            <TextView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/circle_primary"
+                android:text="5"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="12dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pelayanan Kesehatan"
+                    android:textColor="@color/posyandu_text_primary"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins_bold" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dilakukan oleh tenaga kesehatan; meliputi imunisasi, Vitamin A, cek gula darah/kolesterol, dsb."
+                    android:textColor="@color/posyandu_text_primary"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/poppins_regular" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnReadMore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Baca Selengkapnya di Website"
+            android:textAllCaps="false"
+            app:cornerRadius="8dp"
+            android:fontFamily="@font/poppins_bold"
+            android:backgroundTint="@color/posyandu_primary"
+            android:textColor="@color/white"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

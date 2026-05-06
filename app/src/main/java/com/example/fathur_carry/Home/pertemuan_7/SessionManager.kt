@@ -12,6 +12,10 @@ class SessionManager(context: Context) {
         private const val FULL_NAME = "full_name"
         private const val PHONE = "phone"
         private const val ADDRESS = "address"
+        private const val BIRTH_DATE = "birth_date"
+        private const val GENDER = "gender"
+        private const val RELIGION = "religion"
+        private const val PASSWORD = "password"
     }
 
     fun saveLoginSession(username: String) {
@@ -19,6 +23,30 @@ class SessionManager(context: Context) {
         editor.putBoolean(IS_LOGGED_IN, true)
         editor.putString(USERNAME, username)
         editor.apply()
+    }
+
+    fun saveRegistration(
+        fullName: String,
+        birthDate: String,
+        gender: String,
+        religion: String,
+        username: String,
+        password: String
+    ) {
+        val editor = prefs.edit()
+        editor.putString(FULL_NAME, fullName)
+        editor.putString(BIRTH_DATE, birthDate)
+        editor.putString(GENDER, gender)
+        editor.putString(RELIGION, religion)
+        editor.putString(USERNAME, username)
+        editor.putString(PASSWORD, password)
+        editor.apply()
+    }
+
+    fun checkLogin(username: String, password: String): Boolean {
+        val storedUsername = prefs.getString(USERNAME, null)
+        val storedPassword = prefs.getString(PASSWORD, null)
+        return username == storedUsername && password == storedPassword
     }
 
     fun saveProfile(fullName: String, phone: String, address: String) {

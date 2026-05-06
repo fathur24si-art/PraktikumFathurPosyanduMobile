@@ -19,16 +19,37 @@ class AuthActivity : BaseActivity() {
         setupEdgeToEdge(binding.root)
 
         binding.btnLogin.setOnClickListener {
-            val username = binding.etUsername.text.toString()
-            val password = binding.etPassword.text.toString()
+            val username = binding.etUsername.text.toString().trim()
+            val password = binding.etPassword.text.toString().trim()
 
-            if (username.isNotEmpty() && password.isNotEmpty()) {
+            if (username.isEmpty()) {
+                binding.tilUsername.error = getString(R.string.error_empty_field)
+                return@setOnClickListener
+            } else {
+                binding.tilUsername.error = null
+            }
+
+            if (password.isEmpty()) {
+                binding.tilPassword.error = getString(R.string.error_empty_field)
+                return@setOnClickListener
+            } else {
+                binding.tilPassword.error = null
+            }
+
+            // Aturan Login:
+            // 1. Username == Password (Aturan Praktikum)
+            // 2. Username & Password sesuai dengan yang ada di SharedPreferences (Hasil Registrasi)
+            if (username == password || sessionManager.checkLogin(username, password)) {
                 sessionManager.saveLoginSession(username)
                 startActivity(Intent(this, MainActivity::class.java))
                 finish()
             } else {
-                Toast.makeText(this, "Silakan isi username dan password", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.error_login_failed), Toast.LENGTH_SHORT).show()
             }
+        }
+
+        binding.tvRegister.setOnClickListener {
+            startActivity(Intent(this, RegisterActivity::class.java))
         }
     }
 }

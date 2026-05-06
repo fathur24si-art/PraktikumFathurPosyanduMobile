@@ -10,7 +10,9 @@ import com.example.fathur_carry.Home.pertemuan_7.CatatanActivity
 import com.example.fathur_carry.Home.pertemuan_7.JadwalActivity
 import com.example.fathur_carry.Home.pertemuan_7.VaksinActivity
 import com.example.fathur_carry.Home.pertemuan_7.ArticleDetailActivity
+import com.example.fathur_carry.Home.pertemuan_7.PosyanduInfoFragment
 import com.example.fathur_carry.Home.pertemuan_7.SessionManager
+import com.example.fathur_carry.R
 import com.example.fathur_carry.databinding.FragmentHomeP6Binding
 
 class HomeFragment : Fragment() {
@@ -45,12 +47,17 @@ class HomeFragment : Fragment() {
         }
 
         binding.menuInfo.setOnClickListener {
-            // Tetap di Home atau arahkan ke detail info Posyandu
-            startActivity(Intent(requireContext(), ArticleDetailActivity::class.java))
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, PosyanduInfoFragment())
+                .addToBackStack(null)
+                .commit()
         }
 
         binding.cardArticle.setOnClickListener {
-            startActivity(Intent(requireContext(), ArticleDetailActivity::class.java))
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, PosyanduInfoFragment())
+                .addToBackStack(null)
+                .commit()
         }
     }
 

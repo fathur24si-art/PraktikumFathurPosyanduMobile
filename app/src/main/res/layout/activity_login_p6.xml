@@ -85,6 +85,7 @@
                         android:textSize="20sp" />
 
                     <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/tilUsername"
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -106,6 +107,7 @@
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/tilPassword"
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -138,13 +140,24 @@
                         app:elevation="4dp" />
 
                     <TextView
+                        android:id="@+id/tvRegister"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginTop="16dp"
                         android:fontFamily="@font/poppins_regular"
-                        android:text="Lupa Password?"
+                        android:text="@string/dont_have_account"
                         android:textColor="@color/posyandu_primary"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Lupa Password?"
+                        android:textColor="@color/posyandu_text_secondary"
                         android:textSize="14sp" />
 
                 </LinearLayout>
